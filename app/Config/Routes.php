@@ -32,6 +32,30 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/admin','admin\admin::index');
+
+// pegawai 
+$routes->get('/pegawai','admin\pegawai::index');
+$routes->get('/pegawai/tambah','admin\pegawai::tambah');
+$routes->post('/pegawai/save','admin\pegawai::save');
+$routes->post('/pegawai/edit','admin\pegawai::edit');
+
+
+$routes->get('/pegawai/edit/(:any)','admin\pegawai::edit/$1');
+$routes->get('/pegawai/delete/(:num)', 'admin\pegawai::delete/$1');
+
+
+
+// Api routes
+$routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+    $routes->group('data', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+        $routes->get('pegawai', 'Admin::dataPegawai');
+    });
+
+    $routes->group('row', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+        $routes->get('pegawai/(:any)', 'Admin::getRowPegawai/$1');
+    });
+});
 
 /*
  * --------------------------------------------------------------------

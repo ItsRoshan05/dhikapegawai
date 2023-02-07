@@ -1,0 +1,70 @@
+CRITICAL - 2023-02-05 19:42:18 --> syntax error, unexpected 'if' (T_IF)
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2023-02-05 19:42:28 --> Cannot declare class App\Controllers\pegawai, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-02-05 20:03:04 --> Invalid file: client/pegawai.php
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/pegawai....')
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('client/pegawai', Array, true)
+#2 C:\xampp\htdocs\DhikaPegawai\app\Controllers\admin\pegawai.php(10): view('client/pegawai')
+#3 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\admin\pegawai->index()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pegawai))
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-02-05 21:49:34 --> Undefined variable: d
+#0 C:\xampp\htdocs\DhikaPegawai\app\Views\client\pages\pegawai.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('client/pages/pe...', Array, true)
+#4 C:\xampp\htdocs\DhikaPegawai\app\Controllers\admin\pegawai.php(19): view('client/pages/pe...', Array)
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\admin\pegawai->index()
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pegawai))
+#7 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-05 21:56:47 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(176): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#3 C:\xampp\htdocs\DhikaPegawai\app\Controllers\admin\admin.php(16): CodeIgniter\BaseModel->findAll()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\admin\admin->index()
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\admin))
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-02-05 21:58:35 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(176): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#3 C:\xampp\htdocs\DhikaPegawai\app\Controllers\admin\admin.php(16): CodeIgniter\BaseModel->findAll()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\admin\admin->index()
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\admin))
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-02-05 21:59:36 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Model.php(176): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#3 C:\xampp\htdocs\DhikaPegawai\app\Controllers\admin\admin.php(16): CodeIgniter\BaseModel->findAll()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\admin\admin->index()
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\admin))
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2023-02-05 22:38:12 --> Table 'ci4datapegawai.users' doesn't exist
+ERROR - 2023-02-05 22:38:23 --> Table 'ci4datapegawai.users' doesn't exist
+ERROR - 2023-02-05 22:38:52 --> Table 'ci4datapegawai.users' doesn't exist
+ERROR - 2023-02-05 22:49:01 --> Unknown column 'kat.id_kategori' in 'on clause'
+ERROR - 2023-02-05 22:49:09 --> Unknown column 'kat.id_kategori' in 'on clause'
+ERROR - 2023-02-05 23:02:54 --> Table 'ci4datapegawai.users' doesn't exist
