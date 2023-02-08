@@ -952,3 +952,29 @@ CRITICAL - 2023-02-07 00:50:15 --> Trying to get property 'id' of non-object
 #8 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+CRITICAL - 2023-02-07 23:17:22 --> Class name must be a valid object or a string
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(248): Myth\Auth\Config\Services::activator(Object(Myth\Auth\Config\Auth), false)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('activator', Array)
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\myth\auth\src\Config\Services.php(86): CodeIgniter\Config\BaseService::getSharedInstance('activator', NULL)
+#3 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(248): Myth\Auth\Config\Services::activator()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Common.php(929): CodeIgniter\Config\BaseService::__callStatic('activator', Array)
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\myth\auth\src\Controllers\AuthController.php(195): service('activator')
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-07 23:19:43 --> Class name must be a valid object or a string
+#0 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(248): Myth\Auth\Config\Services::activator(Object(Myth\Auth\Config\Auth), false)
+#1 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('activator', Array)
+#2 C:\xampp\htdocs\DhikaPegawai\vendor\myth\auth\src\Config\Services.php(86): CodeIgniter\Config\BaseService::getSharedInstance('activator', NULL)
+#3 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Config\BaseService.php(248): Myth\Auth\Config\Services::activator()
+#4 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Common.php(929): CodeIgniter\Config\BaseService::__callStatic('activator', Array)
+#5 C:\xampp\htdocs\DhikaPegawai\vendor\myth\auth\src\Controllers\AuthController.php(195): service('activator')
+#6 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(832): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\DhikaPegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\DhikaPegawai\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
