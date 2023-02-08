@@ -47,4 +47,10 @@ class PegawaiModel extends Model
         $this->where('id', $data['id'])
             ->delete($data);
     }
+
+    public function updateData($data)
+    {
+        $this->where('id', $data['id'])
+            ->update($data);
+    }
 }

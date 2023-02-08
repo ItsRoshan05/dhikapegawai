@@ -51,6 +51,18 @@ class pegawai extends BaseController
         return view("client/pages/editpegawai",$data);
     }
 
+    public function updateData($id)
+    {   
+        $this->PegawaiModel->save([
+            "id"=> $id,
+            "nama_pegawai" => $this->request->getVar("nama_pegawai"),
+            "alamat_pegawai" => $this->request->getVar("alamat_pegawai"),
+            "id_kategori" => $this->request->getVar("id_kategori")
+
+        ]);
+        return redirect()->to("/pegawai");
+    }
+
     public function delete($id)
     {
         $data = [

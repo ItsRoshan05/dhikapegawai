@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="card-body">
-                            <form action="/pegawai/edit" method="post">
+                            <form action="/pegawai/updateData/<?=$pegawai->id?>" method="post">
                                 <div class="form-group">
                                     <label for="">Nama Pegawai</label>
                                     <input value="<?=$pegawai->nama_pegawai?>" name="nama_pegawai" type="text" class="form-control">
@@ -57,7 +57,7 @@
                                         <?php endforeach ?>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Tambah Data</button>
+                                <button type="submit" class="btn btn-primary">Edit Data</button>
                             </form>
                         </div>
 

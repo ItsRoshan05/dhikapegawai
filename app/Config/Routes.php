@@ -36,26 +36,32 @@ $routes->get('/admin','admin\admin::index');
 
 // pegawai 
 $routes->get('/pegawai','admin\pegawai::index');
+// Tambah data pegawai
 $routes->get('/pegawai/tambah','admin\pegawai::tambah');
 $routes->post('/pegawai/save','admin\pegawai::save');
-$routes->post('/pegawai/edit','admin\pegawai::edit');
 
-
+//Edit data pegawai
+$routes->post('/pegawai/updateData/(:num)', 'admin\pegawai::updateData/$1');
 $routes->get('/pegawai/edit/(:any)','admin\pegawai::edit/$1');
-$routes->get('/pegawai/delete/(:num)', 'admin\pegawai::delete/$1');
 
+//Hapus data pegawai
+$routes->get('/pegawai/delete/(:num)', 'admin\pegawai::delete/$1');
+// end of pegawai
+
+
+//Kategori
 
 
 // Api routes
-$routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes) {
-    $routes->group('data', ['namespace' => 'App\Controllers\Api'], function ($routes) {
-        $routes->get('pegawai', 'Admin::dataPegawai');
-    });
+// $routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+//     $routes->group('data', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+//         $routes->get('pegawai', 'Admin::dataPegawai');
+//     });
 
-    $routes->group('row', ['namespace' => 'App\Controllers\Api'], function ($routes) {
-        $routes->get('pegawai/(:any)', 'Admin::getRowPegawai/$1');
-    });
-});
+//     $routes->group('row', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+//         $routes->get('pegawai/(:any)', 'Admin::getRowPegawai/$1');
+//     });
+// });
 
 /*
  * --------------------------------------------------------------------
