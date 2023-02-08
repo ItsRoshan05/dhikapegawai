@@ -42,8 +42,8 @@
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <!-- <i class="fas fa-user"> Logout</i> -->
+        <a class="nav-link" href="<?= base_url('/logout') ?>" role="button">
+          <i class="fas fa-user"> Logout</i>
         </a>
 
   </nav>
