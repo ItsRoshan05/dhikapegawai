@@ -13,6 +13,10 @@ class admin extends BaseController
 
     public function index()
     {
-        return view('client/index');
+        $data=[
+            'countpegawai' => $this->pegawaimodel->countAll()
+        ];
+
+        return view('client/index', $data);
     }
 }
